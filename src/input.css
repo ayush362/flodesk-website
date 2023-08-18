@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Mh {
+    height: 600px;
+}
+
+.b1 {
+    background: linear-gradient(to right, yellow 50%, blue 50%);
+    /* background: linear-gradient(yellow,blue); */
+    /* background-color: red; */
+}
+
+.b2 {
+    background: orange;
+}
+
+.b3 {
+    background: linear-gradient(to right, purple 50%, black 50%);
+}
+
+.b4 {
+    background: linear-gradient(to right, silver 50%, brown 50%);
+}
+
+.b5 {
+    background: linear-gradient(to right, orange 50%, grey 50%);
+}
+
+.s-10 {
+    background-color: #bf6849;
+}
+
+.s-12 {
+    background-color: #221918;
+}
+
+.s-12-d>div {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+}
+
+.s-12-d>div>span {
+    margin-bottom: 20px;
+}
+
+
+button:hover {
+    border-radius: 1px;
+}
+
+@media screen and (max-width:1280px) {
+    .s-3-d1 {
+        display: none;
+    }
+}
+
+@media (max-width:540px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@keyframes flipbar1 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg) translate(4px, 10px)
+    }
+}
+
+@keyframes fadebar2 {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
+@keyframes flipbar3 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-45deg) translate(1px, -8px)
+    }
+}
+
+.Bar1 {
+    animation: flipbar1 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.Bar2 {
+    animation: fadebar2 .05s;
+    animation-fill-mode: forwards;
+}
+
+.Bar3 {
+    animation: flipbar3 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.openDrawer {
+    transform: translateX(-160px);
+    transition: transform 0.3s;
+}
+
+.mobileNav {
+    right: -160px;
+}
+
+
+html,
+body {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@media (max-width:640px) {
+    .container{
+        padding: 0 50px;
+    }
+}
